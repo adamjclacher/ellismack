@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<!--WHO WE ARE!-->
+<div class="section oneHundred" style="background-image: url({% static 'images/editedWhoWeAre.jpg' %});">
+
+  <div class="sectionContent">
+    <div class="whoWeAre">
+      <div class="header">
+        <p class="massiveHeaders">who</p><br>
+        <p class="massiveHeaders">we <span class="green">are.</span></p>
+      </div>
+      <div class="spacer"></div>
+      <p>Hello. We are Ellis Mack, specialists in catering and hospitality recruitment.
+        <br><br>
+        Whether it’s local or international, temporary or permanent, we get to know your business, then use our years of experience to find the people that suit it best.
+        <br><br>
+        This attention to detail means we enjoy successful partnerships with a wide range of clients across an equally wide range of sectors.
+        <br><br>
+        So from blue chip to sole trader — and everything in between — we’ll do the hard work and find the right person for the right job.
+        <br><br>
+        Detailed. Dedicated. Different. It’s how we do things.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!--EM DETAILS!-->
+
+<div class="section">
+  <div class="stretchyContent">
+    <div class="smallSpacer"></div>
+    <div class="fiftyWidth">
+      <img class="bigHomeLogo" src="{% static 'images/emLogoBlack.png' %}" alt="logo"">
+    </div>
+    <div class="fiftyWidth">
+      <div class="homeInfoSection">
+        <img class="weeHomeIcons" src="{% static 'images/EmHomeIcon.png' %}" alt="home">
+        <p class="infoText"> The Centrum Building, 38 Queen St, Glasgow G1 3DX</p>
+      </div>
+      <div class="homeInfoSection">
+        <img class="weeHomeIcons" src="{% static 'images/EmPhoneIcon.png' %}" alt="home">
+        <p class="infoText"> 0141 548 8246</p>
+      </div>
+      <div class="homeInfoSection">
+        <img class="weeHomeIcons" src="{% static 'images/EmMailIcon.png' %}" alt="home">
+        <p class="infoText"> info@ellismack.co.uk</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="smallSpacer"></div>
+
+<!--SOCIALS!-->
+
+{% endblock %}

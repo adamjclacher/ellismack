@@ -1,0 +1,53 @@
+{% load static %}
+
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ellis Mack</title>
+    <link rel="icon"href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/e0a50a6f3e.js" crossorigin="anonymous"></script>
+    <script src="../static/javascript/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+
+    <!--NAVIGATION!-->
+    <nav class="navBar">
+      <div class="brandTitleContainer">
+        <a href="{% url 'index' %}"><p class="brandTitle" style="letter-spacing: -1px;">ellis mack.</p></a>
+      </div>
+      <a href="javascript:void(0);" class="toggleButton">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+
+      <div class="navBarLinks">
+        <ul>
+
+              <li><a href="#" class="navButton">hire</a></li>
+              <li><a href="#" class="avButton">apply</a></li>
+              <li><a href="{% url 'whoWeAre' %}" class="navButton">who we are</a></li>
+              <li><a href="{% url 'whoWeWorkWith' %}" class="navButton">who we work with</a></li>
+              <li><a href="#" class="navButton">blog</a></li>
+              <li><a href="{% url 'contactPage' %}" class="navButton">contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+      <!--SOCIALS!-->
+
+      <div class="section footer" style="background-color:black;text-align:right;">
+        <img src="{% static 'images/socials.png' %}" alt="" height="60px" class="socials">
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

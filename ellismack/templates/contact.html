@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!--HEADING!-->
+<div class="section seventy" style="background-image: url({% static 'images/handshake.jpg' %});">
+
+  <div class="sectionContent">
+    <div class="header">
+      <p class="massiveHeaders">contact <span class="green">us</span></p><br>
+    </div>
+  </div>
+
+</div>
+
+<!--CONTENT!-->
+<div class="section sectionPadding">
+  <div class="spacer"></div>
+  <div class="fiftyWidth fiftyLeft">
+    <form class="contactForm" action="#" method="post">
+      <div class="outerInfoField curvedEdge"><input class="innerInfoField" placeholder="full name" name="firstName" required></div>
+      <div class="outerInfoField curvedEdge"><input class="innerInfoField" placeholder="email address" name="email" required></div>
+      <div class="outerInfoField curvedEdge"><input class="innerInfoField" placeholder="subject" name="subject" required></div>
+      <div class="outerInfoField curvedEdge"><textarea placeholder="message" name="message" rows="8" class="innerInfoField" required></textarea></div>
+
+      <button type="submit" name="button" class="formButton">submit</button>
+    </form>
+    <br><br>
+    <div class="fiftyWidth">
+      <p><b>Head Office</b></p>
+      <p>Ellis Mack <br>The Centrum Building <br>38 Queen Street <br>Glasgow <br>G13DX <br><br>For all other enquiries please contact <br>t 0171 548 8246 <br>f 0141 548 8001 <br>e info@ellismack.co.uk</p>
+
+    </div>
+    <div class="fiftyWidth">
+      <p>Simon Wright</p>
+      <p>Head of Hospitality and Retail Division <br>Chris Black <br>Managing Director</p>
+    </div>
+  </div>
+  <div class="fiftyWidth fiftyRight">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.2271432740354!2d-4.254304384065328!3d55.85872538058178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469f667b5223%3A0x7c93e1f1afd893f1!2sEllis%20Mack%20Recruitment!5e0!3m2!1sen!2suk!4v1655894832066!5m2!1sen!2suk" width="100%" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+</div>
+<div class="spacer"></div>
+
+
+
+{% endblock %}

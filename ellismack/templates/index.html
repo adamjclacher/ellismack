@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!--WE ARE ELLIS MACK SECTION!-->
+<div class="section oneHundred" style="background-image: url({% static 'images/homeScreenImage.jpg' %});">
+
+  <div class="sectionContent">
+    <div class="header">
+      <p class="massiveHeaders">we</p><br>
+      <p class="massiveHeaders">are</p><br>
+      <p class="green massiveHeaders">ellis</p><br>
+      <p class="green massiveHeaders">mack.</p><br>
+    </div>
+
+    <div class="spacer"></div>
+    <a href="#" class="emButton shaddow"><p class="black">i want to</p>apply</a>
+    <div class="verticalSpacer"></div>
+    <a href="#" class="emButton shaddow"><p class="black">i want to</p>hire</a>
+  </div>
+
+</div>
+
+
+
+<!--SLIDESHOW!-->
+<div class="section seventy" style="background-color:#404040;">
+
+  <div class="sectionContent" style="text-align:center;">
+
+    <p class="jobTitle white">SLIDESHOW</p><br>
+
+  </div>
+
+</div>
+
+<!--STATS!-->
+<div class="section thirty desktopOnly" style="background-color:white;">
+
+  <div class="sectionContent" style="text-align:center;">
+
+    <img class="statsImage" src="{% static 'images/infographic.png' %}" alt="">
+
+  </div>
+
+</div>
+
+<!--WHO WE ARE!-->
+<div class="section oneHundred" style="background-image: url({% static 'images/editedWhoWeAre.jpg' %});">
+
+  <div class="sectionContent">
+    <div class="whoWeAre">
+      <div class="header">
+        <p class="massiveHeaders">who</p><br>
+        <p class="massiveHeaders">we <span class="green">are.</span></p>
+      </div>
+      <div class="spacer"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <br>
+      <p>Vestibulum nec lacus eget lacus vestibulum malesuada. Vivamus pretium rhoncus pharetra. Nunc feugiat elit eget augue consectetur ultrices. Nulla gravida ac orci in mollis. Donec et massa ut ligula porttitor mattis. Mauris eget molestie erat. Morbi rhoncus nunc ipsum, et vulputate risus finibus ut.</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!--JOBS and SPECIALITIES!-->
+<div class="section" style="background-image: url({% static 'images/powderExplosionEdited.jpg' %});">
+
+  <div class="stretchyContent">
+      <div class="header">
+        <p class="massiveHeaders">latest <span class="green">jobs</span></p><br>
+      </div>
+      <!--SEARCH BAR!-->
+      <div class="smallSpacer"></div>
+      <form class="searchForm shaddow">
+        <div class="whiteBackground">
+          <button type="submit" name="button" class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" name="" class="searchBar" placeholder="search for jobs here...">
+        </div>
+      </form>
+      <div class="smallSpacer"></div>
+
+      <div class="jobsSection">
+
+        <div class="jobCard emBorder shaddow">
+          <p class="cardTitle white">Sous Chef</p><br>
+          <p>Salary: £26,000-£32,000</p>
+          <p>Location: Glasgow City</p>
+          <p>Refference Code: VP35CE3861</p>
+        </div>
+        <div class="jobCard emBorder shaddow">
+          <p class="cardTitle white">General Manager</p><br>
+          <p>Salary: £30,000-£35,000</p>
+          <p>Location: Glasgow City</p>
+          <p>Refference Code: VP35CE3861</p>
+        </div>
+        <div class="jobCard emBorder shaddow">
+          <p class="cardTitle white">Breakfast Chef</p><br>
+          <p>Salary: £21,000-£31,000</p>
+          <p>Location: Glasgow City</p>
+          <p>Refference Code: VP35CE3861</p>
+        </div>
+        <div class="jobCard emBorder shaddow">
+          <p class="cardTitle white">General Manager</p><br>
+          <p>Salary: £36,000-£40,000</p>
+          <p>Location: Glasgow City</p>
+          <p>Refference Code: VP35CE3861</p>
+        </div>
+        <div class="desktopOnly jobCard emBorder shaddow">
+          <p class="cardTitle white">Sous Chef</p><br>
+          <p>Salary: £26,000-£32,000</p>
+          <p>Location: Glasgow City</p>
+          <p>Refference Code: VP35CE3861</p>
+        </div>
+        <div class="desktopOnly jobCard emBorder shaddow">
+          <p class="cardTitle white">Breakfast Chef</p><br>
+          <p>Salary: £19,000-£22,000</p>
+          <p>Location: Glasgow City</p>
+          <p>Refference Code: VP35CE3861</p>
+        </div>
+
+      </div>
+
+      <div class="spacer"></div>
+      <div class="header">
+        <p class="massiveHeaders">our specialities</p><br>
+      </div>
+      <div class="smallSpacer"></div>
+      <div class="center">
+        <div class="oneThird">
+          <div class="specialityCard emBorder shaddow">
+            <div class="centreLeftText">
+              <p>hospitality</p>
+              <p class="white">permanent</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="oneThird">
+          <div class="specialityCard emBorder shaddow">
+            <div class="centreLeftText">
+              <p>hospitality</p>
+              <p class="white">temporary</p>
+            </div>
+          </div>
+        </div>
+        <div class="oneThird">
+          <div class="specialityCard emBorder shaddow">
+            <div class="centreLeftText">
+              <p>remote</p>
+              <p class="white">HR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--EM DETAILS!-->
+
+<div class="section">
+  <div class="stretchyContent">
+    <div class="smallSpacer"></div>
+    <div class="fiftyWidth">
+      <img class="bigHomeLogo" src="{% static 'images/emLogoBlack.png' %}" alt="logo"">
+    </div>
+    <div class="fiftyWidth">
+      <div class="homeInfoSection">
+        <img class="weeHomeIcons" src="{% static 'images/EmHomeIcon.png' %}" alt="home">
+        <p class="infoText"> The Centrum Building, 38 Queen St, Glasgow G1 3DX</p>
+      </div>
+      <div class="homeInfoSection">
+        <img class="weeHomeIcons" src="{% static 'images/EmPhoneIcon.png' %}" alt="home">
+        <p class="infoText"> 0141 548 8246</p>
+      </div>
+      <div class="homeInfoSection">
+        <img class="weeHomeIcons" src="{% static 'images/EmMailIcon.png' %}" alt="home">
+        <p class="infoText"> info@ellismack.co.uk</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="smallSpacer"></div>
+
+<!--SOCIALS!-->
+
+{% endblock %}

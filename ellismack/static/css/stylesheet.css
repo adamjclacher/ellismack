@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    transition: 0.2s;
+}
+
+*:focus {
+    outline: none;
+}
+
+.green{
+  color: #2BAA5A;
+}
+
+.black{
+  color: black;
+}
+
+.white{
+  color:white;
+}
+
+.emBorder{
+  border-radius: 40px 0px 40px 0px;
+  border-bottom: 7px solid  #006600;
+  border-right: 7px solid  #006600;
+}
+
+.massiveHeaders{
+  font-size: 62pt;
+  font-weight: bold;
+}
+
+.medHeader{
+  font-size: 30pt;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shaddow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spacer{
+  width: 10px;
+  height: 58pt;
+}
+
+.smallSpacer{
+  width: 100%;
+  height: 25px;
+}
+
+.bigHomeLogo{
+  width: 80%;
+}
+
+.emButton{
+  display: inline-block;
+  background-color: #2BAA5A;
+  color: white;
+  padding: 1.2em 1.2em;
+  font-size: 16pt;
+  text-decoration: none;
+  border-radius: 40px 0px 40px 0px;
+  border-bottom: 7px solid  #006600;
+  border-right: 7px solid  #006600;
+  transition: 0.2s;
+}
+
+.emButton:hover{
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.verticalSpacer{
+  display: inline-block;
+  width: 30px;
+}
+
+.header{
+  line-height: 0.75;
+}
+
+/*NAVIGATION*/
+.navBar{
+
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 0;
+  opacity: .8;
+}
+
+.navSpace{
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.navBarLinks{
+  position: absolute;
+  right:2.5%;
+}
+
+.brandTitleContainer{
+  margin-left: 2.5%;
+}
+
+.brandTitle{
+  float:left;
+  font-size: 40px;
+  margin: 10px;
+  color:green;
+}
+
+.navBarLinks ul{
+  margin: 0px;
+  padding: 0;
+  display: flex;
+}
+
+.navBarLinks li{
+  list-style: none;
+}
+
+.navBarLinks li a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 20px;
+  transition: 0.2s;
+  padding:20px;
+}
+
+.navBarLinks li a:hover{
+  color: green;
+}
+
+.toggleButton{
+  position: absolute;
+  font-size: 40px;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.toggleButton.clicked{
+  color: black;
+}
+
+/* SECTIONS */
+
+.section{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionPadding{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.oneHundred{
+  min-height:100vh;
+}
+
+.fiftyHeight{
+  min-height:50vh;
+}
+
+.seventy{
+  min-height:70vh;
+}
+
+.thirty{
+  min-height:30vh;
+}
+
+.backgroundImage{
+  height: 100%;
+  width: 100%;
+
+  object-fit: contain;
+}
+
+.sectionContent{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+}
+
+.stretchyContent{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.center{
+  text-align: center;
+}
+
+/*SEARCH BAR*/
+
+.searchForm{
+  width: 100%;
+  height: 60px;
+  background-color: #2BAA5A;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 40px 0px 40px 0px;
+  border-bottom: 7px solid  #006600;
+  border-right: 7px solid  #006600;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.searchButton{
+  font-size: 26px;
+  margin-top: 12px;
+  background:none;
+  border: none;
+  width: 60px;
+  transition: 0.2s;
+}
+
+.searchBar{
+  width: calc(100% - 70px);
+  font-size: 26px;
+  background: none;
+  border: none;
+}
+
+.searchButton:hover{
+  cursor: pointer;
+  color: white;
+}
+
+/*JOBS SECTION*/
+
+.jobsSection{
+  text-align: center;
+}
+
+.jobCard{
+  box-sizing: border-box;
+  background-color: #2BAA5A;
+  width: 31%;
+  padding: 15px;
+  margin: 1%;
+  min-width: 300px;
+  display: inline-block;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.cardTitle{
+  font-size: 26px;
+}
+
+.jobCard:hover, .specialityCard:hover{
+  cursor: pointer;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+/*OUR SPECIALITIES*/
+
+.oneThird{
+  width: 32%;
+  display: inline-block;
+}
+
+.specialityCard{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2BAA5A;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 26pt;
+}
+
+.centreLeftText{
+  display: inline-block;
+  text-align: left;
+}
+
+/*EMDetails*/
+
+.fiftyWidth{
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+.fiftyLeft{
+  padding-right: 15px;
+}
+
+.fiftyRight{
+  padding-left: 15px;
+}
+
+.homeInfoSection{
+  margin-bottom: 5px;
+}
+
+.infoText{
+  font-size: 28px;
+}
+
+.weeHomeIcons{
+  height: 32px;
+  float: left;
+  padding-right: 10px;
+}
+
+
+/*FORMS*/
+
+.outerInfoField{
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+
+.innerInfoField{
+  width: 100%;
+  font-size: 15px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  -webkit-appearance: none;
+  resize: none;
+}
+
+.innerInfoField::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  opacity: 1; /* Firefox */
+}
+
+.innerInfoField::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: grey;
+}
+
+.innerInfoField::-ms-input-placeholder { /* Microsoft Edge */
+  color: grey;
+}
+
+.formButton{
+  background-color: #2BAA5A; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.formButton:hover{
+  cursor: pointer;
+}
+
+/*Trading Partners*/
+
+.partnersContainer{
+  display: flex;
+  overflow: auto;
+  padding: 20px;
+}
+
+.infoCard{
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #2BAA5A;
+  min-width: 250px;
+}
+
+li{
+  list-style: none;
+}
+
+/*OTHER*/
+
+.footer{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.socials:hover{
+  cursor: pointer;
+}
+
+.statsImage{
+  width: auto;
+  max-width: 100%;
+}
+
+.desktopOnly{
+  display:inline-block;
+}
+
+.whoWeAre{
+  max-width: 50%;
+}
+
+.bigTextSection{
+  display: inline-block;
+  max-width: 60%;
+  text-align:left;
+}
+
+
+@media screen and (max-width:1079px) {
+
+  .brandTitleContainer{
+    margin-left: 0%;
+  }
+
+  .whoWeAre{
+    max-width: 100%;
+  }
+
+  .bigTextSection{
+    max-width: 90%;
+  }
+
+  .statsImage{
+    max-width: 100%;
+  }
+
+  .navBarLinks{
+    position:relative;
+  }
+
+  .toggleButton{
+    display: flex;
+  }
+  .navBarLinks{
+    display: none;
+    width: 100%;
+
+  }
+
+  .navBar{
+    flex-direction: column;
+  }
+
+  .navBarLinks ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navBarLinks li {
+    text-align: center;
+  }
+
+  .navBarLinks.active{
+    display: flex;
+  }
+
+  .fiftyWidth{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .fiftyLeft{
+    padding-right: 0px;
+  }
+  .fiftyRight{
+    padding-left: 0px;
+  }
+
+}
+
+@media screen and (max-width:725px) {
+  .desktopOnly{
+    display: none;
+  }
+
+  .bigTextSection{
+    max-width: 100%;
+  }
+
+  .jobCard{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .oneThird{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .massiveHeaders{
+    font-size: 50pt;
+  }
+}
+
+@media screen and (max-width:550px) {
+
+  .navSpace{
+    height: 55px;
+  }
+}
